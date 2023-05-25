@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Border and Radius Tailwind CSS - Learning</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Battambang&family=Bayon&display=swap" rel="stylesheet">
+            <script src="https://cdn.tailwindcss.com"></script>
+            <script>
+                tailwind.config = {
+                    theme: {
+                        fontFamily: {
+                            'sans': ['ui-sans-serif', 'system-ui'],
+                            'serif': ['ui-serif', 'Georgia'],
+                            'mono': ['ui-monospace', 'SFMono-Regular'],
+                            'khmer-h': ['Bayon', 'sans-serif'],
+                            'khmer': ['Battambang', 'cursive'],
+                        },
+                    },
+
+                }
+            </script>
+    </head>
+    <body>
+        <!-- Border width & Colors -->
+        <div class="w-96 m-3 p-5 border">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione error esse dicta nesciunt voluptatum ab.
+        </div>
+
+         <!-- Border width & Colors -->
+         <div class="w-96 m-3 p-5 border-2 shadow-md shadow-blue-300/50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione error esse dicta nesciunt voluptatum ab.
+        </div>
+
+        <div class="relative w-96 m-3 p-5 border border-black-400 shadow">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione error esse dicta nesciunt voluptatum ab.
+            <div class="absolute border-2 border-black-400 left-5 top-[-13px] bg-white">Title</div>
+        </div>
+
+        
+        <div class="relative w-96 m-3 p-5 border border-red-400 shadow rounded-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione error esse dicta nesciunt voluptatum ab.
+            <div class="absolute border border-red-400 left-5 top-[-13px] bg-white pr-4 pl-4 rounded-sm">Title</div>
+        </div>
+
+        <div class="relative w-96 m-3 p-5 border-x-2 border-red-400 shadow">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione error esse dicta nesciunt voluptatum ab.
+            
+        </div>
+
+        <div class="relative w-96 m-3 p-5 border-y-2 border-blue-400 shadow">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione error esse dicta nesciunt voluptatum ab.
+        </div>
+        <div class="relative w-96 m-3 p-5 border-t-4 border-blue-400 shadow">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione error esse dicta nesciunt voluptatum ab.
+        </div>
+
+        <div class="relative w-96 m-3 p-5 border-b-4 border-blue-400 shadow">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione error esse dicta nesciunt voluptatum ab.
+        </div>
+
+        <div class="relative w-96 m-3 p-5 border-r-4 border-blue-400 shadow">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione error esse dicta nesciunt voluptatum ab.
+        </div>
+
+        <div class="relative w-96 m-3 p-5 border-l-4 border-blue-400 shadow">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione error esse dicta nesciunt voluptatum ab.
+        </div>
+
+        <div class="border-x-lime-300 border-4 rounded-lg m-3 p-5 w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore facere error dicta quis vitae ducimus architecto ipsam ex, fuga suscipit? Officiis minus quo vel quae incidunt optio rem eligendi id?</div>
+
+        <div class="border-x-lime-300 border-4 rounded-full m-3 p-5 w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore facere error dicta quis vitae ducimus architecto ipsam ex, fuga suscipit? Officiis minus quo vel quae incidunt optio rem eligendi id?</div>
+
+        <div class="border-x-lime-500 border-4 rounded-t-2xl m-3 p-5 w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore facere error dicta quis vitae ducimus architecto ipsam ex, fuga suscipit? Officiis minus quo vel quae incidunt optio rem eligendi id?</div>
+
+        <div class="border-lime-100 border-4 rounded-b-2xl m-3 p-5 w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore facere error dicta quis vitae ducimus architecto ipsam ex, fuga suscipit? Officiis minus quo vel quae incidunt optio rem eligendi id?</div>
+
+        <div class="border-lime-200 border-4 rounded-bl-2xl m-3 p-5 w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore facere error dicta quis vitae ducimus architecto ipsam ex, fuga suscipit? Officiis minus quo vel quae incidunt optio rem eligendi id?</div>
+
+        <div class="border-lime-300 border-2 rounded-tr-3xl rounded-bl-3xl m-3 p-5 w-96">X Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore facere error dicta quis vitae ducimus architecto ipsam ex, fuga suscipit? Officiis minus quo vel quae incidunt optio rem eligendi id?</div>
+
+        <div class="border-amber-400 border-2 rounded-tr-full rounded-bl-3xl m-3 p-5 w-96">X Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore facere error dicta quis vitae ducimus architecto ipsam ex, fuga suscipit? Officiis minus quo vel quae incidunt optio rem eligendi id?</div>
+
+        <div class="outline-amber-400 outline outline-4 m-3 p-5 w-96">X Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore facere error dicta quis vitae ducimus architecto ipsam ex, fuga suscipit? Officiis minus quo vel quae incidunt optio rem eligendi id?</div>
+
+        <div class="border border-4 border-black-400 outline-amber-500 outline outline-4 m-3 p-5 w-96">X Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore facere error dicta quis vitae ducimus architecto ipsam ex, fuga suscipit? Officiis minus quo vel quae incidunt optio rem eligendi id?</div>
+    </body>
+</html>

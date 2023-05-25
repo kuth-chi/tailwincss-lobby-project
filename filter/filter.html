@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Filter Tailwind CSS - Learning</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Battambang&family=Bayon&display=swap" rel="stylesheet">
+            <script src="https://cdn.tailwindcss.com"></script>
+            <script>
+                tailwind.config = {
+                    theme: {
+                        fontFamily: {
+                            'sans': ['ui-sans-serif', 'system-ui'],
+                            'serif': ['ui-serif', 'Georgia'],
+                            'mono': ['ui-monospace', 'SFMono-Regular'],
+                            'khmer-h': ['Bayon', 'sans-serif'],
+                            'khmer': ['Battambang', 'cursive'],
+                        },
+                    },
+
+                }
+            </script>
+    </head>
+    <body>
+        <h2 class="font-khmer-h text-5xl text-red-700">Blur - ព្រាល</h2>
+        <!-- Blur -->
+        <div class="blur-3xl font-khmer-h text-blue-700 text-5xl">កម្ពុជា - Cambodia</div>
+        <div class="blur-2xl font-khmer-h text-5xl">កម្ពុជា - Cambodia</div>
+        <div class="blur-xl font-khmer-h text-5xl">កម្ពុជា - Cambodia</div>
+        <div class="blur-md font-khmer-h text-5xl text-red-600">កម្ពុជា - Cambodia</div>
+        <div class="blur-sm font-khmer-h text-5xl text-pink-600">កម្ពុជា - Cambodia</div>
+        <div class="blur-sx font-khmer-h text-5xl text-pink-400">កម្ពុជា - Cambodia</div>
+        <br>
+        <img class="blur-xl" src="../assets/img/digital-art.jpg" alt=""/>
+
+        <!-- brightness -->
+        <img class="brightness-50" src="../assets/img/palm-ocean.jpg" alt=""/>
+        <img class="brightness-75" src="../assets/img/palm-ocean.jpg" alt=""/>
+        <img class="brightness-100" src="../assets/img/palm-ocean.jpg" alt=""/>
+        <img class="brightness-125" src="../assets/img/palm-ocean.jpg" alt=""/>
+        <img class="brightness-150" src="../assets/img/palm-ocean.jpg" alt=""/>
+
+        <!-- Grayscale -->
+        <img class="grayscale hover:grayscale-0" src="../assets/img/palm-ocean.jpg" alt=""/>
+        <!-- Invert -->
+        <img class="invert" src="../assets/img/palm-ocean.jpg" alt=""/>
+        <!-- Sepia -->
+        <img class="sepia" src="../assets/img/palm-ocean.jpg" alt=""/>
+
+        <h2 class="font-khmer-h text-5xl">Hue Rotate - ប្តូរទម្រង់ព៌ណ</h2>
+        <!-- Hue Rotate -->
+        <img class="hue-rotate-0" src="../assets/img/mountain.jpg" alt=""/>
+        <img class="hue-rotate-15" src="../assets/img/mountain.jpg" alt=""/>
+        <img class="hue-rotate-30" src="../assets/img/mountain.jpg" alt=""/>
+        <img class="hue-rotate-60" src="../assets/img/mountain.jpg" alt=""/>
+        <img class="hue-rotate-90" src="../assets/img/mountain.jpg" alt=""/>
+        <img class="hue-rotate-180" src="../assets/img/mountain.jpg" alt=""/>
+
+        <br>
+
+    </body>
+</html>

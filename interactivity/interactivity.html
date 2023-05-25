@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Filter Tailwind CSS - Learning</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Battambang&family=Bayon&display=swap" rel="stylesheet">
+            <script src="https://cdn.tailwindcss.com"></script>
+            <script>
+                tailwind.config = {
+                    theme: {
+                        fontFamily: {
+                            'sans': ['ui-sans-serif', 'system-ui'],
+                            'serif': ['ui-serif', 'Georgia'],
+                            'mono': ['ui-monospace', 'SFMono-Regular'],
+                            'khmer-h': ['Bayon', 'sans-serif'],
+                            'khmer': ['Battambang', 'cursive'],
+                        },
+                    },
+
+                }
+            </script>
+    </head>
+    <body>
+        <!-- Hover State Styling -->
+        <button class="bg-black text-white px-3 py-2 m-4 rounded-lg hover:bg-slate-400 hover:text-black ">Click me</button>
+
+        <!-- Focus State styling -->
+        <button class="bg-black text-white px-3 py-2 m-4 rounded-lg focus:bg-green-400 focus:text-black ">Submit</button>
+
+        <!-- Active state styling -->
+        <button class="bg-black text-white px-3 py-2 m-4 rounded-lg active:bg-violet-800 active:text-white hover:shadow-lg hover:shadow-violet-600/50 hover:border-violet-400 ">View</button>
+
+        <!-- Styling Base on Parent state -->
+        <a href="" class="group block max-w-xs mx-auto rounded-lg p-6 shadow-lg space-y-3 bg-red-400 hover:bg-slate-200 shadow shadow-slate-600 shadow-xl">
+            <h3 class="group-hover:text-blue-700 font-semibold">Card Title</h3>
+            <p class="group-hover:text-blue-700">This is card body with description.</p>
+        </a>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Tailwind CSS - Learning</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="https://cdn.tailwindcss.com"></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Battambang&family=Bayon&display=swap" rel="stylesheet">
+        <script>
+            tailwind.config = {
+                theme: {
+                    fontFamily: {
+                        'sans': ['ui-sans-serif', 'system-ui'],
+                        'serif': ['ui-serif', 'Georgia'],
+                        'mono': ['ui-monospace', 'SFMono-Regular'],
+                        'khmer-h': ['Bayon', 'sans-serif'],
+                        'khmer': ['Battambang', 'cursive'],
+                    },
+                },
+
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Font family-->
+        <div class="font-sans">Angkor Watt is Awesome</div>
+        <div class="font-serif">Angkor Watt is Awesome</div>
+        <div class="font-khmer-h">Angkor Watt is Awesome - អង្គរវត្តដ៏អស្ចារ្យ</div>
+        <div class="font-khmer">Angkor Watt is Awesome - អង្គរវត្តដ៏អស្ចារ្យ</div>
+<br>
+        <!-- Font Size -->
+        <h3 class="font-khmer-h">Font Size - ទំហំពុម្ភអក្សរ</h3>
+        <div class="text-xs">Tailwind is good 1</div>
+        <div class="text-sm">Tailwind is good 2</div>
+        <div class="text-base">Tailwind is good 3</div>
+        <div class="text-lg">Tailwind is good 4</div>
+        <div class="text-xl">Tailwind is good 5</div>
+        <div class="text-2xl">Tailwind is good 6</div>
+        <div class="text-3xl">Tailwind is good 7</div>
+<br>
+        <h3 class="font-khmer-h">Font Weight - កម្រាស់ពុម្ភអក្សរ</h3>
+        <!-- Font Weight -->
+        <div class="font-light">Cambodia is number 1 of culture 1</div>
+        <div class="font-normal">Cambodia is number 1 of culture 2</div>
+        <div class="font-medium">Cambodia is number 1 of culture 3</div>
+        <div class="font-semibold">Cambodia is number 1 of culture 4</div>
+        <div class="font-bold">Cambodia is number 1 of culture 5</div>
+<br>
+        <!-- Font Spacing -->
+        <h3 class="font-khmer-h">Font Spacing - ចន្លោះពុម្ភអក្សរ</h3>
+        <div class="tracking-tight">Bayon is great Temple 1</div>
+        <div class="tracking-normal">Bayon is great Temple 2</div>
+        <div class="tracking-wide">Bayon is great Temple 3</div>
+    <!-- Text Alignment -->
+    <br>
+        <h3 class="font-khmer-h">Text Alignment - តម្រឹមល្បះ</h3>
+        <div class="text-left">Oddar Meanchey is my born 1</div>
+        <div class="text-center">Oddar Meanchey is my born 2</div>
+        <div class="text-right">Oddar Meanchey is my born 3</div>
+    <br>
+
+        <!-- Text Decoration -->
+        <h3 class="font-khmer-h">Text Decoration - លម្អព្យាង</h3>
+        <div class="underline decoration-4 decoration-red-400">Thailand is not good 1</div>
+        <div class="underline decoration-dotted">Thailand is not good 2</div>
+        <div class="underline decoration-dashed">Thailand is not good 3</div>
+        <div class="underline decoration-wavy decoration-red-500 decoration-1">Thailand is not good 3</div>
+    <br>
+    <!-- Decoration Offset -->
+    <div class="underline decoration-4 decoration-blue-600 underline-offset-8">Tailwind is awesome</div>
+    <br>
+        <p class="normal-case">Tailwind is awesome</p>
+        <p class="uppercase">Tailwind is awesome</p>
+        <p class="lowercase">Tailwind is awesome</p>
+        <p class="capitalize">Tailwind is awesome</p>
+    <br>
+
+</body>
+ </html>

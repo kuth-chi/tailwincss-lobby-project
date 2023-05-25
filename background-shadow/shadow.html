@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Shadow and Background Tailwind CSS - Learning</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Battambang&family=Bayon&display=swap" rel="stylesheet">
+            <script src="https://cdn.tailwindcss.com"></script>
+            <script>
+                tailwind.config = {
+                    theme: {
+                        fontFamily: {
+                            'sans': ['ui-sans-serif', 'system-ui'],
+                            'serif': ['ui-serif', 'Georgia'],
+                            'mono': ['ui-monospace', 'SFMono-Regular'],
+                            'khmer-h': ['Bayon', 'sans-serif'],
+                            'khmer': ['Battambang', 'cursive'],
+                        },
+                    },
+
+                }
+            </script>
+    </head>
+    <body>
+        <!-- Background Class -->
+        <div class="h-44 w-96 bg-no-repeat bg-cover bg-center" style="background-image: url('../assets/img/mountain.jpg')"></div>
+
+        <!-- Gradients -->
+        <div class="h-52 bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+
+        <!-- Shadow -->
+        <div class="w-96 mt-6 ml-4 p-3 shadow">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sed optio repudiandae? Accusantium, dicta inventore? Fugit, et tenetur laboriosam consectetur magnam eos ipsa necessitatibus nesciunt doloremque ratione, non qui minus. 
+        </div>
+        <div class="w-96 mt-6 ml-4 p-3 shadow-md">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sed optio repudiandae? Accusantium, dicta inventore? Fugit, et tenetur laboriosam consectetur magnam eos ipsa necessitatibus nesciunt doloremque ratione, non qui minus. 
+         </div>
+         <div class="w-96 mt-6 ml-4 p-3 shadow-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sed optio repudiandae? Accusantium, dicta inventore? Fugit, et tenetur laboriosam consectetur magnam eos ipsa necessitatibus nesciunt doloremque ratione, non qui minus. 
+         </div>
+         <div class="w-96 mt-6 ml-4 p-3 shadow-xl shadow-red-500/20">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sed optio repudiandae? Accusantium, dicta inventore? Fugit, et tenetur laboriosam consectetur magnam eos ipsa necessitatibus nesciunt doloremque ratione, non qui minus. 
+         </div>
+         <div class="w-96 mt-6 ml-4 p-3 shadow-2xl shadow-blue-600/50">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sed optio repudiandae? Accusantium, dicta inventore? Fugit, et tenetur laboriosam consectetur magnam eos ipsa necessitatibus nesciunt doloremque ratione, non qui minus. 
+         </div>
+         <div class="w-96 mt-6 ml-4 p-3 shadow-2xl shadow-inner">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sed optio repudiandae? Accusantium, dicta inventore? Fugit, et tenetur laboriosam consectetur magnam eos ipsa necessitatibus nesciunt doloremque ratione, non qui minus. 
+         </div>
+         <br>
+         <!-- Mix Blend  -->
+         <div class="flex justify-center -space-x-24">
+            <div class="mix-blend-multiply bg-blue-300">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet distinctio possimus tenetur praesentium omnis, aliquid sit obcaecati totam itaque facilis officiis fuga ad deserunt suscipit vitae necessitatibus alias corrupti voluptas.</div>
+
+            <div class="mix-blend-multiply bg-pink-300">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet distinctio possv imus tenetur praesentium omnis, aliquid sit obcaecati totam itaque facilis officiis fuga ad deserunt suscipit vitae necessitatibus alias corrupti voluptas.</div>
+         </div>
+
+         
+
+
+    </body>
+</html>

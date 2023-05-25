@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Sizing Tailwind CSS - Learning</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Battambang&family=Bayon&display=swap" rel="stylesheet">
+            <script src="https://cdn.tailwindcss.com"></script>
+            <script>
+                tailwind.config = {
+                    theme: {
+                        fontFamily: {
+                            'sans': ['ui-sans-serif', 'system-ui'],
+                            'serif': ['ui-serif', 'Georgia'],
+                            'mono': ['ui-monospace', 'SFMono-Regular'],
+                            'khmer-h': ['Bayon', 'sans-serif'],
+                            'khmer': ['Battambang', 'cursive'],
+                        },
+                    },
+
+                }
+            </script>
+    </head>
+    <body>
+        <article>
+       <h3 class="font-khmer-h">Sizing - កំណត់ទំហំ</h3> 
+       <!-- Sizing -->
+       <div class="bg-green-900 text-yellow-500 w-4">Mayanmar</div>
+       <div class="bg-blue-900 text-yellow-500 w-8">Cambodia</div>
+       <div class="bg-orange-900 text-yellow-500 w-16">Thailand</div>
+       <div class="bg-purple-900 text-yellow-500 w-32">Indonesia</div>
+       <div class="bg-cyan-900 text-yellow-500 w-64">Vietnam</div>
+        <br>
+       <h3 class="font-khmer-h">Percentage - ទំហំកំណត់ជាភាគរយ</h3>
+       <div class="bg-green-700 text-white w-1/4">Phom Penh - Siem Reap</div>
+       <div class="bg-gray-700 text-white w-1/3">Phom Penh - Oddar Meanchey</div>
+       <div class="bg-orange-700 text-white w-1/2">Phom Penh - Sihanouk</div>
+       <div class="bg-blue-700 text-white w-1/1">Phom Penh - Koh Kong</div>
+
+       <br>
+       <!-- Width of Viewport -->
+       <h3 class="font-khmer-h">Width of Viewport - ទំហំអេក្រង់</h3>
+       <div class="bg-blue-500 text-white w-screen">Hello world</div>
+       <div class="bg-blue-600 text-white w-full">Full width 100%</div>
+
+       <!-- Arbitrary-->
+       <div class="bg-blue-700 text-white w-[300px]">Full width 300px</div>
+        <br>
+       <h3 class="font-khmer-h">Max width - ទំហំអតិបរិមា</h3>
+       <p class="bg-blue-100 text-black max-w-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ab quis consectetur aperiam molestiae. Dicta ducimus delectus aliquam, alias beatae perferendis est! Eligendi rem deserunt quos cupiditate animi recusandae adipisci.</p>
+       <p class="bg-blue-200 text-black max-w-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat voluptatum rem esse minima illo in veniam atque ad necessitatibus quia voluptatem excepturi, optio commodi, deserunt cupiditate vel accusantium vitae?</p>
+       <p class="bg-blue-300 text-black max-w-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi error quod ullam architecto voluptatibus. Laudantium asperiores cupiditate mollitia, aperiam sunt dignissimos laborum consectetur ab, doloremque quo aut. Et, doloribus amet.</p>
+       <p class="bg-blue-400 text-black max-w-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore vitae hic veritatis tempore accusamus placeat quos quas magnam architecto in, consequatur consequuntur officia magni eveniet exercitationem numquam tempora amet modi.</p>
+       <p class="bg-blue-500 text-white max-w-2xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, voluptatum exercitationem atque explicabo officia rerum enim perferendis at soluta? Odit sunt cumque ipsam, ratione sequi architecto cum deserunt beatae hic.</p>
+       <p class="bg-blue-600 text-white max-w-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ratione doloribus, magni itaque deleniti aliquam maxime eos atque veniam eaque, ipsum officia beatae consequatur dolor ullam provident adipisci ex iure!</p>
+        
+       
+       <div class="bg-gray-300 max-w-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, voluptate? Dolor quod perspiciatis similique ducimus voluptatem impedit deserunt error ut provident architecto modi voluptatibus odio quae maiores rerum, repellendus sapiente?</div>
+         
+       <!-- Height -->
+       <div class="flex item-end">
+        <!-- Item list -->
+        <div class="bg-orange-500 w-20 h-24">item 1</div>
+        <div class="bg-orange-500 w-20 h-32">item 2</div>
+        <div class="bg-orange-500 w-20 h-40">item 3</div>
+        <div class="bg-orange-500 w-20 h-48">item 4</div>
+        <div class="bg-orange-500 w-20 h-60">item 5</div>
+        <div class="bg-orange-500 w-20 h-92">item 6</div>
+
+       </div>
+       <div class="bg-blue-300 text-white h-screen font-khmer">សួស្តី = Hello</div>
+    </article>
+    </body>
+ </html>

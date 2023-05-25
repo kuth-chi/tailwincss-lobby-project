@@ -9,6 +9,7 @@
         <style>
             body {
                 margin-top: 200px !important;
+                padding: 5rem;
             }
             .alert {
                 display: flex;
@@ -58,7 +59,7 @@
         </div> 
         
         <p class="text-back">Tailwind is awesome</p>
-        <p class="text-whtie">Tailwind is awesome</p>
+        <p class="text-white">Tailwind is awesome</p>
         <p class="text-red-500">Red Tailwind is awesome</p>
         <p class="text-green-500">Tailwind is awesome</p>
         <p class="text-emerald-500">Tailwind is awesome</p>
@@ -76,13 +77,39 @@
         <input type="text" class="border border-green-400"></input>
         <input type="text" class="border border-orange-400"></input>
         <!-- Divide Color -->
-        <div class="divide-y">
+        <div class="divide-y divide-blue-300">
             <div>item 1</div>
             <div>item 2</div>
             <div>item 3</div>
             <div>item 4</div>
             <div>item 5</div>
         </div>
+        <div class="divide-y divide-blue-300">
+            <div>item 1</div>
+            <div>item 2</div>
+            <div>item 3</div>
+            <div>item 4</div>
+            <div>item 5</div>
+        </div>
+        <!-- Outline button -->
+        <button class="outline outline-red-500">Button</button>
+        <button class="outline outline-blue-200">Button</button>
+
+        <!-- Shadow -->
+        <button class="shadow-lg bg-cyan-500 shadow-cyan-500">
+            Subscript
+        </button>
+
+        <button class="shadow-lg bg-cyan-500 shadow-purple-500/60">
+            Subscript Purple
+        </button>
+        <input type="checkbox" class="accent-purple-500" checked />
+        <input type="checkbox" class="accent-amber-500" checked />
+
+        <!-- Arbitrary Color -->
+        <div class="bg-[#427fab] text-yellow-100">Hello</div>
+        <div class="bg-[rgb(255,0,0)] text-yellow-100">Hello</div>
+        <div class="bg-[steelblue] text-yellow-100">Hello</div>
     </body>
    
 </html>
