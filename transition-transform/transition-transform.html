@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Transition and Transform Tailwind CSS - Learning</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Battambang&family=Bayon&display=swap" rel="stylesheet">
+            <script src="https://cdn.tailwindcss.com"></script>
+            <script>
+                tailwind.config = {
+                    theme: {
+                        extend: {
+                            transitionDuration: { 
+                                2000: '2000ms',
+                            }
+                        },
+                        fontFamily: {
+                            'sans': ['ui-sans-serif', 'system-ui'],
+                            'serif': ['ui-serif', 'Georgia'],
+                            'mono': ['ui-monospace', 'SFMono-Regular'],
+                            'khmer-h': ['Bayon', 'sans-serif'],
+                            'khmer': ['Battambang', 'cursive'],
+                        },
+                    },
+
+                }
+            </script>
+    </head>
+    <body>
+        <!-- No transition -->
+        <button class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700 ">
+            Click me
+        </button>
+
+        <!-- With transition -->
+        <button 
+        class="
+        px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700 hover:opacity-20 transition duration-500
+        ">
+            Click me
+        </button>
+
+        <!-- With transition -->
+        <button 
+        class="
+        px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700 hover:rotate-12 transition-transform duration-1000
+        ">
+            Click me
+        </button>
+
+        <img src="../assets/img/image4.jpg" alt="" class="w-48 hover:scale-75 hover:rotate-180 hover:skew-x-12 transition  duration-2000" />
+    </body>
+
+</html>

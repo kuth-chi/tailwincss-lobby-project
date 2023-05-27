@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Sizing Tailwind CSS - Learning</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Battambang&family=Bayon&display=swap" rel="stylesheet">
+            <script src="https://cdn.tailwindcss.com"></script>
+            <script>
+                tailwind.config = {
+                    theme: {
+                        fontFamily: {
+                            'sans': ['ui-sans-serif', 'system-ui'],
+                            'serif': ['ui-serif', 'Georgia'],
+                            'mono': ['ui-monospace', 'SFMono-Regular'],
+                            'khmer-h': ['Bayon', 'sans-serif'],
+                            'khmer': ['Battambang', 'cursive'],
+                        },
+                    },
+
+                }
+            </script>
+    </head>
+    <body>
+        <div class="container w-full">
+            <h3 class="font-khmer-h text-blue-800 items-center p-4">Grid - ជួរ</h3>
+        </div>
+        <!-- Grid -->
+        <div class="grid gap-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 2xl:grid-cols-12 px-2">
+            <div class="p-10 border border-blue-600 bg-blue-100 text-center​​ col-span-2">A</div>
+            <div class="p-10 border border-lime-600 bg-lime-100 text-center">B</div>
+            <div class="p-10 border border-green-600 bg-green-100 text-center">C</div>
+            <div class="p-10 border border-blue-600 bg-blue-100 text-center row-span-2">D</div>
+            <div class="p-10 border border-red-600 bg-red-100 text-center ">E</div>
+            <div class="p-10 border border-yellow-600 bg-yellow-100 text-center">F</div>
+            <div class="p-10 border border-orange-600 bg-orange-100 text-center">G</div>
+            <div class="p-10 border border-purple-600 bg-purple-100 text-center col-span-2 row-span-2">H</div>
+            <div class="p-10 border border-sky-600 bg-sky-100 text-center">I</div>
+            <div class="p-10 border border-blue-600 bg-blue-100 text-center">A</div>
+            <div class="p-10 border border-lime-600 bg-lime-100 text-center">B</div>
+            <div class="p-10 border border-green-600 bg-green-100 text-center">C</div>
+            <div class="p-10 border border-blue-600 bg-blue-100 text-center">D</div>
+            <div class="p-10 border border-red-600 bg-red-100 text-center">E</div>
+            <div class="p-10 border border-yellow-600 bg-yellow-100 text-center">F</div>
+            <div class="p-10 border border-orange-600 bg-orange-100 text-center">G</div>
+            <div class="p-10 border border-purple-600 bg-purple-100 text-center">H</div>
+            <div class="p-10 border border-sky-600 bg-sky-100 text-center">I</div>
+    </div>
+
+    <div class="container w-full">
+        <h3 class="font-khmer-h text-blue-800 items-center p-4">II. Grid - ជួរ</h3>
+    </div>
+    <!-- Grid -->
+    <!-- using grid-cols-1 to display 1 row every screen size also you need to adjust you spand to display from medium screen -->
+    <div class="grid grid-cols-1 md:grid-cols-4">
+        <div class="p-10 border border-blue-600 bg-blue-100 text-center​​ md:col-span-2">A</div>
+        <div class="p-10 border border-lime-600 bg-lime-100 text-center">B</div>
+        <div class="p-10 border border-green-600 bg-green-100 text-center">C</div>
+        <div class="p-10 border border-blue-600 bg-blue-100 text-center md:row-span-2">D</div>
+        <div class="p-10 border border-red-600 bg-red-100 text-center ">E</div>
+        <div class="p-10 border border-yellow-600 bg-yellow-100 text-center">F</div>
+        <div class="p-10 border border-orange-600 bg-orange-100 text-center">G</div>
+        <div class="p-10 border border-purple-600 bg-purple-100 text-center md:col-span-2 md:row-span-2">H</div>
+        <div class="p-10 border border-sky-600 bg-sky-100 text-center">I</div>
+        <div class="p-10 border border-blue-600 bg-blue-100 text-center">A</div>
+        <div class="p-10 border border-lime-600 bg-lime-100 text-center">B</div>
+        <div class="p-10 border border-green-600 bg-green-100 text-center">C</div>
+        <div class="p-10 border border-blue-600 bg-blue-100 text-center">D</div>
+        <div class="p-10 border border-red-600 bg-red-100 text-center">E</div>
+        <div class="p-10 border border-yellow-600 bg-yellow-100 text-center">F</div>
+        <div class="p-10 border border-orange-600 bg-orange-100 text-center">G</div>
+        <div class="p-10 border border-purple-600 bg-purple-100 text-center">H</div>
+        <div class="p-10 border border-sky-600 bg-sky-100 text-center">I</div>
+</div>
+    </body>
+</html>

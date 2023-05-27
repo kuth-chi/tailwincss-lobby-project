@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Sizing Tailwind CSS - Learning</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Battambang&family=Bayon&display=swap" rel="stylesheet">
+            <script src="https://cdn.tailwindcss.com"></script>
+            <script>
+                tailwind.config = {
+                    theme: {
+                        fontFamily: {
+                            'sans': ['ui-sans-serif', 'system-ui'],
+                            'serif': ['ui-serif', 'Georgia'],
+                            'mono': ['ui-monospace', 'SFMono-Regular'],
+                            'khmer-h': ['Bayon', 'sans-serif'],
+                            'khmer': ['Battambang', 'cursive'],
+                        },
+                    },
+
+                }
+            </script>
+    </head>
+    <body class="xs:bg-red-300 sm:bg-green-300 md:bg-orange-300 lg:bg-red-300 xl:bg-blue-300 2xl:bg-cyan-300">
+        <!-- Code goes here-->
+        <h3 class="font-khmer-h m-10 xs:text-md md:text-lg lg:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl"> </h3>
+        <script>
+            function ShowBrowserWidth() {
+              const width = window.innerWidth
+                document.querySelector('h3').innerText = 'ទំហំ - Resizing: ' + width + 'px'
+            }
+            window.onload = ShowBrowserWidth
+            window.onresize = ShowBrowserWidth
+        </script>
+    </body>
+</html>

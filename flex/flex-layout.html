@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Flex Tailwind CSS - Learning</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Battambang&family=Bayon&display=swap" rel="stylesheet">
+            <script src="https://cdn.tailwindcss.com"></script>
+            <script>
+                tailwind.config = {
+                    theme: {
+                        fontFamily: {
+                            'sans': ['ui-sans-serif', 'system-ui'],
+                            'serif': ['ui-serif', 'Georgia'],
+                            'mono': ['ui-monospace', 'SFMono-Regular'],
+                            'khmer-h': ['Bayon', 'sans-serif'],
+                            'khmer': ['Battambang', 'cursive'],
+                        },
+                    },
+
+                }
+            </script>
+    </head>
+    <body>
+        <h4>Flex Columns</h4>
+        <!-- Flex item -->
+        <div class="flex flex-wrap items-center justify-center h-72 w-full">
+            <div class="p-10 border border-blue-300 bg-blue-100"> 1</div>
+            <div class="p-10 border border-blue-300 bg-blue-100"> 2</div>
+            <div class="p-10 border border-blue-300 bg-blue-100"> 3</div>
+            <div class="p-10 border border-blue-300 bg-blue-100"> 4</div>
+            
+        </div>
+<!-- Flex column -->
+        <div class="flex flex-col items-center justify-center h-72 w-full">
+            <div class="p-10 border border-blue-300 bg-blue-100"> 1</div>
+            <div class="p-10 border border-blue-300 bg-blue-100"> 2</div>
+            <div class="p-10 border border-blue-300 bg-blue-100"> 3</div>
+            <div class="p-10 border border-blue-300 bg-blue-100"> 4</div>
+            
+        </div>
+<!-- Decorate Space with Gap -->
+        <div class="flex items-center gap-4 justify-start h-72 w-full">
+            <div class="p-10 border border-blue-300 bg-blue-100"> 1</div>
+            <div class="p-10 border border-blue-300 bg-blue-100"> 2</div>
+            <div class="p-10 border border-blue-300 bg-blue-100"> 3</div>
+            <div class="p-10 border border-blue-300 bg-blue-100"> 4</div>
+            
+        </div>
+<!-- Ordering item -->
+<h3 class="font-khmer-h">ORDERING ITEMS - លំដាប់</h3>
+
+        <div class="flex items-center gap-4 justify-start h-72 w-full">
+            <div class="p-10 border border-blue-300 bg-blue-100"> 1</div>
+            <div class="p-10 border border-blue-300 bg-blue-100"> 2</div>
+            <div class="p-10 border border-blue-300 bg-blue-100"> 3</div>
+            <div class="p-10 border border-blue-300 bg-blue-100"> 4</div>
+            
+        </div>
+
+        <!-- Grow and Shrink -->
+        <h3 class="font-khmer-h">GROW AND SHRINK - រីក និង បំពេញ</h3>
+        <div class="flex-initial flex w-full bg-gray-100">
+            <!-- flex-none will not allowed item to grow and shrink -->
+            <div class="flex-none w-64 p-10 border border-blue-300 bg-blue-100"> 1</div>
+            <!-- Flex auto allow item to be growing and shrink  -->
+            <div class="flex-auto w-64 p-10 border border-blue-300 bg-blue-100"> 2</div>
+            <!-- Flex-1 flex auto allow item to grow base on width of screen -->
+            <div class="flex-1 w-64 p-10 border border-blue-300 bg-blue-100"> 3</div>
+            <div class="w-64 p-10 border border-blue-300 bg-blue-100"> 4</div>
+            <div class="w-64 p-10 border border-blue-300 bg-blue-100"> 5</div>
+            
+        </div>
+
+        <h3 class="font-khmer-h text-blue-800">Test Flex Shrink</h3>
+        <div class="items-center bg-gray-200 justify-center items-cen">
+            <div class="flex flex-wrap border border-2 bg-gray-200 gap-4 p-4 rounded-lg">
+                <input type="text" value="Name" class="flex-auto w-64  border border-blue-300 p-2">
+                <input type="text" value="Name" class="flex-auto w-64 border border-orange-300 p-2">
+                <button class="w-80 flex-1 border border-blue-300 rounded-md bg-lime-400 shadow shadow-md">submit</button>
+            </div>
+        </div>
+        <br>
+
+    </body>
+</html>

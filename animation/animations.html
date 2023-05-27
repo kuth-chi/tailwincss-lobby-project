@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Transition and Transform Tailwind CSS - Learning</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Battambang&family=Bayon&display=swap" rel="stylesheet">
+            <script src="https://cdn.tailwindcss.com"></script>
+            <script>
+                tailwind.config = {
+                    theme: {
+                        extend: {
+                            transitionDuration: { 
+                                2000: '2000ms',
+                            },
+                        Animation: {
+                            'spin-slow': 'spin 3s linear infinite',
+                            },
+                            keyframe: {
+                                wiggle: {
+                                    '0%, 100%': {transform: 'rotate(-12deg)'},
+                                    '50%, 100%': {transform: 'rotate(12deg)'},
+                                }
+                            }
+                        },
+                        fontFamily: {
+                            'sans': ['ui-sans-serif', 'system-ui'],
+                            'serif': ['ui-serif', 'Georgia'],
+                            'mono': ['ui-monospace', 'SFMono-Regular'],
+                            'khmer-h': ['Bayon', 'sans-serif'],
+                            'khmer': ['Battambang', 'cursive'],
+                        },
+                    },
+
+                }
+            </script>
+    </head>
+    <body>
+        <!-- Animation with SVG -->
+        <div class="flex items-center justify-center min-h-screen bg-slate-900">
+            <svg
+                class="animate-ping w-48 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                file="none"
+                viewBox="0 0 24 24"
+                >
+                <circle
+                    class="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    stroke-width="4"
+                ></circle>
+                <path 
+                    class="opacity-75"
+                    fill="currentColor"
+                    d="M3 12a8 8 0 017-8V0cS.373 8 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"                
+                ></path>
+            </svg>
+            
+        </div>
+    </body>
+</html>

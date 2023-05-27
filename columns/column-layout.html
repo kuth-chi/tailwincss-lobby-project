@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Sizing Tailwind CSS - Learning</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Battambang&family=Bayon&display=swap" rel="stylesheet">
+            <script src="https://cdn.tailwindcss.com"></script>
+            <script>
+                tailwind.config = {
+                    theme: {
+                        fontFamily: {
+                            'sans': ['ui-sans-serif', 'system-ui'],
+                            'serif': ['ui-serif', 'Georgia'],
+                            'mono': ['ui-monospace', 'SFMono-Regular'],
+                            'khmer-h': ['Bayon', 'sans-serif'],
+                            'khmer': ['Battambang', 'cursive'],
+                        },
+                    },
+
+                }
+            </script>
+    </head>
+    <body>
+        <!-- Columns -->
+        <h3 class="font-khmer-h m-4 text-blue-800">
+            ក្រលោន - Columns 
+        </h3>
+
+        <div class="columns-10 gap-0">
+            <img src="../assets/img/image1.jpg" alt="" class="w-full aspect-video" />
+            <img src="../assets/img/image2.jpg" alt="" class="w-full aspect-square" />
+            <img src="../assets/img/image3.jpg" alt="" class="w-full" />
+            <img src="../assets/img/image4.jpg" alt="" class="w-full" />
+            <img src="../assets/img/image5.jpg" alt="" class="w-full" />
+            <img src="../assets/img/image6.jpg" alt="" class="w-full" />
+            <img src="../assets/img/image7.jpg" alt="" class="w-full" />
+            <img src="../assets/img/image8.jpg" alt="" class="w-full" />
+            <img src="../assets/img/image9.jpg" alt="" class="w-full" />
+            <img src="../assets/img/image10.jpg" alt="" class="w-full" />
+            <img src="../assets/img/image11.jpg" alt="" class="w-full" />
+            <img src="../assets/img/image12.jpg" alt="" class="w-full" />
+        </div>
+        <!-- With Gap -->
+<br>
+        <div class="xs:columns-1 sm:columns-2 md:columns-4 lg:columns-6 xl:columns-10 2xl:columns-12 gap-2">
+            <img src="../assets/img/image1.jpg" alt="" class="w-full" />
+            <img src="../assets/img/image2.jpg" alt="" class="w-full" />
+            <img src="../assets/img/image3.jpg" alt="" class="w-full" />
+            <img src="../assets/img/image4.jpg" alt="" class="w-full" />
+            <img src="../assets/img/image5.jpg" alt="" class="w-full" />
+            <img src="../assets/img/image6.jpg" alt="" class="w-full" />
+            <img src="../assets/img/image7.jpg" alt="" class="w-full" />
+            <img src="../assets/img/image8.jpg" alt="" class="w-full" />
+            <img src="../assets/img/image9.jpg" alt="" class="w-full" />
+            <img src="../assets/img/image10.jpg" alt="" class="w-full" />
+            <img src="../assets/img/image11.jpg" alt="" class="w-full" />
+            <img src="../assets/img/image12.jpg" alt="" class="w-full" />
+        </div>
+        
+        
+    </body>
+</html>

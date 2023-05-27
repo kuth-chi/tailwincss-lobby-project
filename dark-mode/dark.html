@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dark mode Tailwind CSS - Learning</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Battambang&family=Bayon&display=swap" rel="stylesheet">
+            <script src="https://cdn.tailwindcss.com"></script>
+            <script>
+                tailwind.config = {
+                    darkMode: 'class',
+                    theme: {
+                        extend: {
+                            transitionDuration: { 
+                                2000: '2000ms',
+                            }
+                        },
+                        fontFamily: {
+                            'sans': ['ui-sans-serif', 'system-ui'],
+                            'serif': ['ui-serif', 'Georgia'],
+                            'mono': ['ui-monospace', 'SFMono-Regular'],
+                            'khmer-h': ['Bayon', 'sans-serif'],
+                            'khmer': ['Battambang', 'cursive'],
+                        },
+                    },
+
+                }
+            </script>
+            <style>
+                .toggle-checkbox:checked {
+                    right:0;
+                    border-color: #68d391;
+                }
+                .toggle-checkbox:checked + .toggle-label{
+                    background: #68d391;
+                }
+            </style>
+    </head>
+    <body>
+        
+            <div class="relative container mx-auto mt-10 bg-white dark:bg-slate-900 rounded-xl px-6 py-8 shadow-xl">
+                <h3 class="text-slate-900 dark:text-white font-medium tracking-light">Lorem ipsum dolor sit amet</h3>
+                <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, fuga! Nihil omnis maiores, odit ratione aut voluptas soluta. Repellat doloribus eaque, tenetur quasi accusamus enim?</p>
+                <!-- Toggle dark-mode -->
+                <div class="absolute inline-block w-10 mr-2 ml-6 align-middle select-none transition duration-200 ease-in top-8 right-4">
+                    <input 
+                    type="checkbox" 
+                    class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" 
+                    name="toggle" 
+                    id="toggle-dark">
+                    <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+                </div>
+            </div>
+            
+        
+        <!-- Switch button -->
+        
+        <!-- JavaScript Toggle -->
+        <script>
+            document.getElementById("toggle-dark").addEventListener("change", function () {
+                if(this.checked){
+                    document.documentElement.classList.add('dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                }
+            })
+        </script>
+    </body>
+</html>
